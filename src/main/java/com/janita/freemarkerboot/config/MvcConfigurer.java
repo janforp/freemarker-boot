@@ -21,6 +21,7 @@ public class MvcConfigurer extends WebMvcConfigurerAdapter {
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/index").setViewName("index.html");
+        registry.addViewController("/editor").setViewName("editor.html");
         registry.setOrder(Ordered.HIGHEST_PRECEDENCE);
     }
 }

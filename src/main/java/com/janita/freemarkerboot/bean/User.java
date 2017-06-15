@@ -25,4 +25,11 @@ public class User {
     public void setAge(String age) {
         this.age = age;
     }
+
+    public static User getUser() {
+        User user = new User();
+        user.setAge("18");
+        user.setUsername("周杰伦");
+        return user;
+    }
 }

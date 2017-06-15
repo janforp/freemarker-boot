@@ -1,5 +1,6 @@
 package com.janita.freemarkerboot.controller;
 
+import com.janita.freemarkerboot.bean.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,6 +15,9 @@ public class ParamController {
 
     @GetMapping
     public String paramOne() {
+        User user = User.getUser();
+
+
         return "param/param";
     }
 }

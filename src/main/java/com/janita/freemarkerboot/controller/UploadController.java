@@ -13,10 +13,14 @@ import java.util.Map;
 @Controller
 public class UploadController {
 
+    /**
+     * freemaker传递参数方法1:类似jsp,直接使用 request
+     * @param request
+     * @return
+     */
     @RequestMapping("/upload")
-    public String upload(HttpServletRequest request, Map<String, String> map) {
-        map.put("str","你好");
-        request.setAttribute("a","b");
+    public String upload(HttpServletRequest request) {
+        request.setAttribute("request","我是通过request传递到页面的参数");
         return "upload";
     }
 }

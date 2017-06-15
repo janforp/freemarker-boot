@@ -7,14 +7,12 @@
 
     <script>
         $(function () {
-            alert("123");
             var section = $("#section");
             console.log(section)
         })
     </script>
 </head>
 <body>
-    <div id="section">${a}</div>
-    <div>${str}</div>
+    <div id="section">${request}</div>
 </body>
 </html>

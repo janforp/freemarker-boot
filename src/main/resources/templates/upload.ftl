@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>editor</title>
+    <title>使用ueditor实现图片上传功能</title>
 </head>
 <body>
-你好
+    <div>${a}</div>
+    <div>${str}</div>
 </body>
 </html>

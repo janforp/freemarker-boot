@@ -1,5 +1,6 @@
 package com.janita.freemarkerboot.controller;
 
+import com.janita.freemarkerboot.bean.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,6 +28,7 @@ public class UploadController {
 
     /**
      * 传递参数的第二种方法,通过入参的map直接带到页面
+     * 单个参数
      * @param param
      * @return
      */
